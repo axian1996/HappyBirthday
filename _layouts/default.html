@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <head>
-{% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url={{ site.baseurl }}/journal" />{% endif %}
+{% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url=/gallery" />{% endif %}
 </head>
 
 <body>
@@ -12,10 +12,6 @@
     {% include nav.html %}
 
     {{ content }}
-
-    {% include search.html %}
-
-    {% include newsletter.html %}
 
     {% include footer.html %}
 

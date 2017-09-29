@@ -1,20 +1,14 @@
 ---
 layout: page
-title: "album"
-description: "masonry"
+title: "RESERVOIR"
+description: "We Were Having Fun With Your Friends"
 active: gallery
 header-img: "img/gallery-bg.jpg"
-album-title: "my 1st album"
+album-title: "This is also where I met Sunny! "
 images:
- - image_path: /gallery/archive/g01/bg1.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g01/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g01/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
+ - image_path: https://imgur.com/NiY6jDq.jpg
+   caption: We were talking about heading to that mountain
+   copyright: © G &amp; A
 ---
 
 <html class="no-js" lang="en">
@@ -35,16 +29,16 @@ images:
 		
 {% for image in page.images %}  		
 
-				<figure class="gallery-item">
+	 			<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+<a href="{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ image.image_path }}"></a>
 						
-					</header>	
+		 			</header>	
 					<figcaption class='gallery-caption'>
-						<div class="entry-summary" id="{{ image.caption }}">
-							<h3>{{image.caption}}</h3>
+			 			<div class="entry-summary" id="{{ image.caption }}">
+		 					<h3>{{image.caption}}</h3>
 							<p>{{image.copyright}}</p>
 						</div>
 					</figcaption>
@@ -61,7 +55,7 @@ images:
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="/js/jquery.magnific-popup.js"></script>
 
 <script type="text/javascript">
       $(document).ready(function($) {

@@ -1,14 +1,18 @@
 ---
 layout: home
-main-title: "PHOT&#8226;O&#8226;RAMA"
-subtitle: "Photo Journal"
-description: "Photography and more"
+main-title: "HAPPY BIRTHDAY MY LOVE!"
+subtitle: "This is your 21 years old birthday I love you &lt;3"
+description: "Hope we would be happy together forever"
 images:
- - image_path: /img/slider/home01.jpg
+ - image_path: https://i.imgur.com/19R4Chm.jpg
    gallery-folder: /img/slider/
- - image_path: /img/slider/home02.jpg
+ - image_path: https://i.imgur.com/HjH2OYH.jpg
    gallery-folder: /img/slider/
- - image_path: /img/slider/home03.jpg
+ - image_path: https://i.imgur.com/wfNaoAw.jpg
+   gallery-folder: /img/slider/
+ - image_path: https://imgur.com/vFzdCti.jpg
+   gallery-folder: /img/slider/
+ - image_path: https://i.imgur.com/l14Tlfa.jpg
    gallery-folder: /img/slider/
 ---
 
@@ -59,8 +63,8 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+<a href="{{ image.gallery-folder }}">
+<img src="{{ image.image_path }}"></a>
 	
 				</header>	
 				</figure>
@@ -81,54 +85,62 @@ images:
                  {% if site.facebook_username %}
 			<li>
    <a href="https://facebook.com/{{ site.facebook_username }}" style="
-color:#dddddd; target="_blank" title="Facebook">
-                       <i class="fa fa-facebook"></i>
+color:#dddddd;" target="_blank" title="Facebook">
+                         <i class="fa fa-facebook"></i>
                      </span>
 </a></li>
     {% endif %}
+
  {% if site.twitter_username %}
 			<li>
    <a href="https://twitter.com/{{ site.twitter_username }}" style="
-color:#dddddd; target="_blank" title="Twitter">
-                       <i class="fa fa-twitter"></i>
+color:#dddddd;" target="_blank" title="Twitter">
+                        <i class="fa fa-twitter"></i>
                      </span>
 </a></li>
     {% endif %}
+
                 {% if site.instagram_username %}
 			<li>
    <a href="https://instagram.com/{{ site.instagram_username }}" style="
-color:#dddddd; target="_blank" title="Instagram">
-                       <i class="fa fa-instagram"></i>
+color:#dddddd;" target="_blank" title="Instagram">
+                        <i class="fa fa-instagram"></i>
                      </span>
 </a></li>
     {% endif %}
+
                     {% if site.flickr_username %}
 						<li>
    <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
-color:#dddddd; target="_blank" title="Flickr">
+color:#dddddd;" target="_blank" title="Flickr">
               <i class="fa fa-flickr"></i>
                      </span>
  </a></li>	
      {% endif %}
+
                     {% if site.deviantart_username %}
 			<li>
    <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
-color:#dddddd; target="_blank" title="DeviantArt">
+color:#dddddd;" target="_blank" title="DeviantArt">
 <i class="fa fa-deviantart"></i> </span>
 </a></li>	
     {% endif %}
-                    {% if site.github_username %}
+
+                     {% if site.github_username %}
                 <li>
    <a href="https://github.com/{{ site.github_username }}" style="
-color:#dddddd; target="_blank" title="Github">
+color:#dddddd;" target="_blank" title="Github">
               <i class="fa fa-github"></i>
-                     </span>
+			  </span></a></li>
                    {% endif %}
+
+				   {% if site.email %}
 <li>
     <a href="mailto:{{ site.email }}" style="
-color:#dddddd; target="_blank" title="Email">
+color:#dddddd;" target="_blank" title="Email">
               <i class="fa fa-envelope-o"></i></span>
           </a> </li>
+		  {% endif %}
 	
 					
 		</ul>	
